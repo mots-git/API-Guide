@@ -14,10 +14,13 @@
       }
       .titleBox{
          width: 150px;
-         padding-bottom: 50px;
+         padding-bottom: 70px;
       }
       .mainBody {
           height: 690px;
+      }
+      table, th, td {
+        border:1px solid black;
       }
      </style>
    </head>
@@ -37,28 +40,40 @@
          <br>
          <div class="row">
             <div class="col-md-3 col-md-offset-2">
-               <div class="titleBox" style="padding-top: 20px!important">Hubspot</div>
+               <div class="titleBox" style="padding-top: 20px!important">Values Not Syncing</div>
             </div>
          </div>
-         <div id="lvl_results_yes">
+         <div id="lvl_results_yes" style="text-align: left;">
             <div class="row">
-               <div class="col-md-3 col-md-offset-2">
-                  <img src="../assets/Tick_Icon.png" id="resultsImage" />
+               <div class="col-md-3 col-md-offset-2" style="margin-left: 10%;">
                </div>
-               <div class="col-md-3" id="displayText" style="width:40%">
-                  <h4>Test content</h4>
-                  <h4>Test content</h4>
-               </div>
-            </div>
-            <div class="row">
-               <div id = "textResultsDisplay" class="col-md-3 col-md-offset-4" style="left:40%;">
-                  <p>Request Type: Test</p>
-                  <p id="level1-results-yes">Test</p>
-                  <p id="level2-results-yes">Test</p>
-                  <p id="level3-results-yes">Test</p>
-               </div>
-               <div class="col-md-3 col-md-offset-4">
-                  <div class = "arrowImage" onclick="saveFile()"><img src="../assets/copy_paste.png" id="assets-copy-image-yes" style="margin-top: 99px;margin-left: 80px;"/></div>
+               <div class="col-md-3" id="displayText" style="width:50%">
+                  <p><b>1.</b> If a client is having an issue where they have an API connection to a LGF and only some of the values are syncing would indicate that they have a mapping issue. In the CRM they have to map the different fields to each other, for example if the LGF has the fields below this is how they should be mapped:</p>
+                  <table style="width:100%">
+                    <tr>
+                      <td>LinkedIn</td>
+                      <td>CRM</td>
+                    </tr>
+                    <tr>
+                      <td>First Name</td>
+                      <td>First Name</td>
+                    </tr>
+                    <tr>
+                      <td>Last Name</td>
+                      <td>Last Name</td>
+                    </tr>
+                    <tr>
+                      <td>Country</td>
+                      <td>Country</td>
+                    </tr>
+                    <tr>
+                      <td>Work Email</td>
+                      <td>Work Email</td>
+                    </tr>
+                  </table>
+                  <br>
+                  <p>What we see in some cases is only some of the data from the fields above will sync across and this means that the client simply has to fix the mapping in their CRM. For this send across the relevant setup guide from <a href="SetupGuides.html">here.</a></p>
+                  <p>If the field which is not syncing needs a standardization value please send the client the follow sheet <a href="https://docs.google.com/spreadsheets/d/1yXU8oj3ADV8RURrLwkWI5tU0FEag5cwF/edit#gid=1475830031" target="_blank">here.</a> This contains the values for countries, states, job functions, etc which is needed for them to map correctly.</p>
                </div>
             </div>
             <div class="row">
@@ -69,8 +84,13 @@
             </div>
          </div>
          <div class="row">
+               <div class="col-md-3 col-md-offset-9">
+                 
+               </div>
+            </div>
+         <div class="row">
             <div class="col-md-9">
-               <div onclick="location.href='../index.html';"><img class="arrowImage" src="../assets/Return_Icon.png" style="float:right"/></div>
+               <div onclick="location.href='../index.html';"><img class="arrowImage" src="../assets/Return_Icon.png" style="float:right"></div>
             </div>
          </div>
          <br>
