@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>MOTS Pages Guide</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <link rel="stylesheet" href="../css/pages/styles.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="../js/matchedAudience/hubspot.js"></script>
+     <style>
+      #assets-copy-image-yes, #assets-copy-image-no {
+         margin-top: 49px;
+      }
+      .titleBox{
+         width: 150px;
+         padding-bottom: 50px;
+      }
+      .mainBody {
+          height: 690px;
+      }
+      table, th, td {
+        border:1px solid black;
+      }
+     </style>
+   </head>
+   <body>
+      <div class="container text-center">
+      <div class="row">
+         <div class="col-md-4">
+            <img class="headerImage" src="../assets/Owl_Avatar.png" />
+         </div>
+         <div class="col-md-6">
+            <h2 class="headerText">
+               MOTS API Guide
+            </h2>
+         </div>
+      </div>
+      <div class = "mainBody">
+         <br>
+         <div class="row">
+            <div class="col-md-3 col-md-offset-2">
+               <div class="titleBox" style="padding-top: 20px!important">Leads Missing</div>
+            </div>
+         </div>
+         <div id="lvl_results_yes" style="text-align: left;">
+            <div class="row">
+               <div class="col-md-3 col-md-offset-2" style="margin-left: 10%;">
+               </div>
+               <div class="col-md-3" id="displayText" style="width:50%">
+                  <p><b>1.</b> A client is having an issue where only some of their leads are not syncing from LinkedIn to their 3rd party, this is a different issue than if they're not syncing at all. If all of the leads are not syncing please follow this flow <a href="LeadsNotSyncing.html">here.</a></p>
+                  <p>First step is to ask the client to check their mapping settings, with some CRM systems if the mapping is not correct for all of the different fields this may mean that the lead may not sync to the 3rd party. In the CRM they have to map the different fields to each other, for example if the LGF has the fields below this is how they should be mapped:</p>
+                  <table style="width:100%">
+                    <tr>
+                      <td>LinkedIn</td>
+                      <td>CRM</td>
+                    </tr>
+                    <tr>
+                      <td>First Name</td>
+                      <td>First Name</td>
+                    </tr>
+                    <tr>
+                      <td>Last Name</td>
+                      <td>Last Name</td>
+                    </tr>
+                    <tr>
+                      <td>Country</td>
+                      <td>Country</td>
+                    </tr>
+                    <tr>
+                      <td>Work Email</td>
+                      <td>Work Email</td>
+                    </tr>
+                  </table>
+                  <br>
+                  <p>If the client is unsure how to map the fields or check please send them the relavent setup which can be found <a href="SetupGuides.html">here.</a></p>
+                  <p>If the field which is not syncing needs a standardization value please send the client the follow sheet <a href="https://docs.google.com/spreadsheets/d/1yXU8oj3ADV8RURrLwkWI5tU0FEag5cwF/edit#gid=1475830031" target="_blank">here.</a> This contains the values for countries, states, job functions, etc which is needed for them to map correctly.</p>
+                  <p></p>
+               </div>
+            </div>
+            <div class="row">
+
+              <div class="float-container-buttons" style="margin-left: 36%;padding-top: 0px;">
+               </div>
+
+            </div>
+         </div>
+         <div class="row">
+               <div class="col-md-3 col-md-offset-9">
+                 
+               </div>
+            </div>
+         <div class="row">
+            <div class="col-md-9">
+               <div onclick="location.href='../index.html';"><img class="arrowImage" src="../assets/Return_Icon.png" style="float:right"></div>
+            </div>
+         </div>
+         <br>
+      </div>
+   </body>
+</html>
